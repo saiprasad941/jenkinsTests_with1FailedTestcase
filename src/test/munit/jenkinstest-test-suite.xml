@@ -23,6 +23,6 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     </munit:test>
     <munit:test name="jenkinstest-test-suiteTest_Failed" description="MUnit Test">
         <flow-ref name="jenkinstestFlow" doc:name="Flow Reference"/>
-        <munit:assert-not-same message="======= Test Execution is Failed ====" expectedValue="#['Response From Jenkins 1']" actualValue="#['Response From Jenkins Test Application']" doc:name="Assert Not Equals"/>
+        <munit:assert-not-same message="======= Test Execution is Failed ====" expectedValue="#['Response From Jenkins Test Application']" actualValue="#['Response From Jenkins Test Application']" doc:name="Assert Not Equals"/>
     </munit:test>
 </mule>
